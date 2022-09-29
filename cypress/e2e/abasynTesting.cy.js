@@ -60,8 +60,18 @@ describe('Login into comsats portal',()=>{
     
   })
 
+  it('Give email but not password',()=>{
+    cy.get('#MaskedRegNo').type('Fa20-bsi-020').get('#Password').type('').get('#LoginSubmit').click({force:true})
+    
+  })
 
-  
+  it('Give password and not password',()=>{
+    cy.get('#MaskedRegNo').type('').get('#Password').type('29august2002').get('#LoginSubmit').click({force:true})
+    
+  })
+
+
+
 })
 
 
