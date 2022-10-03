@@ -8,46 +8,46 @@ beforeEach(()=>{
 })
 
 
-// describe('Visit the website', () => {
-//   it('passes', () => {
-//     cy.visit('http://54.183.24.91/')
-//   })
+describe('Visit the website', () => {
+  it('passes', () => {
+    cy.visit('http://54.183.24.91/')
+  })
 
 
-//   it('check resposiveness for s10',()=>{
-//     cy.viewport('samsung-s10')
-//     cy.scrollTo("bottom",{duration:2000})
-//     cy.scrollTo("top",{duration:2000})
+  it('check resposiveness for s10',()=>{
+    cy.viewport('samsung-s10')
+    cy.scrollTo("bottom",{duration:2000})
+    cy.scrollTo("top",{duration:2000})
 
-//   })
+  })
 
-//   it ('close popup',()=>{
-//     cy.get('.modal-content').within(()=>{
-//       cy.get ('.close').click()
-//     })
-//   })
+  it ('close popup',()=>{
+    cy.get('.modal-content').within(()=>{
+      cy.get ('.close').click()
+    })
+  })
 
-  // it('checks all the links if they are working or not',()=>{
-  //   cy.get('.kingster-header-container-inner').within(()=>{
-  //     cy.get('a').each((link)=>{
-  //       cy.request(link.prop('href'))
-  //     })
-  //   })
-  // })
+  it('checks all the links if they are working or not',()=>{
+    cy.get('.kingster-header-container-inner').within(()=>{
+      cy.get('a').each((link)=>{
+        cy.request(link.prop('href'))
+      })
+    })
+  })
 
-//   it ('Checks if you go to About US when click on it',()=>{
-//     cy.visit('http://54.183.24.91/contact.php')
-//     cy.url().should('be.equal','http://54.183.24.91/contact.php')
-//   })
+  it ('Checks if you go to About US when click on it',()=>{
+    cy.visit('http://54.183.24.91/contact.php')
+    cy.url().should('be.equal','http://54.183.24.91/contact.php')
+  })
 
-//   it('Check the window location',()=>{
-//     cy.visit('http://54.183.24.91/contact.php')
-//     cy.window().then((win) => {
-//       console.log(win.location)
-//     })
-//   })
+  it('Check the window location',()=>{
+    cy.visit('http://54.183.24.91/contact.php')
+    cy.window().then((win) => {
+      console.log(win.location)
+    })
+  })
 
-// })
+})
 
 
 describe('Login into comsats portal',()=>{
